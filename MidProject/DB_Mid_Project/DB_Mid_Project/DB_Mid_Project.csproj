@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19962937-B5B7-4452-A5A4-E5D13BC35B35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DB_Mid_Project</RootNamespace>
+    <AssemblyName>DB_Mid_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configration.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucAssessment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAssessment.Designer.cs">
+      <DependentUpon>ucAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAssessmentComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAssessmentComponent.Designer.cs">
+      <DependentUpon>ucAssessmentComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucClo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucClo.Designer.cs">
+      <DependentUpon>ucClo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEvaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEvaluation.Designer.cs">
+      <DependentUpon>ucEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMarkAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMarkAttendance.Designer.cs">
+      <DependentUpon>ucMarkAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucReport.Designer.cs">
+      <DependentUpon>ucReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucResult.Designer.cs">
+      <DependentUpon>ucResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRubric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRubric.Designer.cs">
+      <DependentUpon>ucRubric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRubricLevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRubricLevel.Designer.cs">
+      <DependentUpon>ucRubricLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStudenList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStudenList.Designer.cs">
+      <DependentUpon>ucStudenList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStudent.Designer.cs">
+      <DependentUpon>ucStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStudentResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStudentResult.Designer.cs">
+      <DependentUpon>ucStudentResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViewAttendance.Designer.cs">
+      <DependentUpon>ucViewAttendance.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucAssessment.resx">
+      <DependentUpon>ucAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAssessmentComponent.resx">
+      <DependentUpon>ucAssessmentComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucClo.resx">
+      <DependentUpon>ucClo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEvaluation.resx">
+      <DependentUpon>ucEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMarkAttendance.resx">
+      <DependentUpon>ucMarkAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucReport.resx">
+      <DependentUpon>ucReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucResult.resx">
+      <DependentUpon>ucResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRubric.resx">
+      <DependentUpon>ucRubric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRubricLevel.resx">
+      <DependentUpon>ucRubricLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStudenList.resx">
+      <DependentUpon>ucStudenList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStudent.resx">
+      <DependentUpon>ucStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStudentResult.resx">
+      <DependentUpon>ucStudentResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViewAttendance.resx">
+      <DependentUpon>ucViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
